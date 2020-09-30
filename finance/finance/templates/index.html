@@ -1,0 +1,42 @@
+{% extends "layoutindex.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+
+<h2>Index</h2>
+  <table>
+    <tr>
+    <th>ID</th>
+    <th>Stock</th>
+    <th>Current Stock Value</th>
+    <th>Qty owned</th>
+    <th>Value of each holding</th>
+  </tr>
+
+ {% for stock in stock %}
+  <tr>
+    <td>{{stock.id}}</td>
+    <td>{{stock.stock}}</td>
+    <td>{{fun(stock.stock)}}</td>
+    <td>{{stock.qty_currently_owned}}</td>
+    <td>{{stock.value_of_holding}}</td>
+  </tr>
+{% endfor %}
+</table>
+
+<div class="cash">
+    <div class="label"><tr> <th>CASH </th> </tr> </div>
+        <div class="value"><tr><th>{{cash}}</th></tr>
+    </div>
+</div>
+
+<div class="cash">
+    <div class="label"><tr> <th>GRAND TOTAL </th> </tr> </div>
+        <div class="value"> <tr> <th>{{grandTotal}}</th> </tr>
+    </div>
+</div>
+
+{% endblock %}

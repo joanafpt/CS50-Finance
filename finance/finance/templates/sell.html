@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Sell
+{% endblock %}
+
+{% block main %}
+
+<form action="/sell" method="post">
+    <div>
+    <label for="stocks">Choose a stock:</label>
+    </div>
+    <div class="form-group">
+    <select name="symbol">
+        {% for stock in stock %}
+        {% print(stock)%}
+        <option value={{stock}}>{{stock}}</option>
+        {% endfor %}
+    </select>
+    <select name="quantity">
+        {% for number in range(1,25) %}
+        <option value={{number}}>{{number}}</option>
+        {% endfor %}
+    </select>
+  </div>
+    <button class="btn btn-primary" type="submit" id="sell">Sell</button>
+</form>
+{% endblock %}

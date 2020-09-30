@@ -1,0 +1,109 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+
+/*ADDED STYLES */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:90%;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid lightblue;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightblue;
+}
+
+h2{
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+select{
+    padding-bottom: 0.5;
+    width: 80px;
+}
+
+
+#sell{
+    width: 80px;
+}
+
+.cash {
+  width: 90%;
+  height: 45px;
+  background: transparent;
+  margin: auto;
+  padding: 8px;
+  border: 0.1px solid lightblue;
+}
+
+.label {
+ margin-left: 5%;
+  height: 30px;
+  background: transparent;
+  float: left;
+  font-weight: bold;
+}
+
+.value {
+
+  height: 30px;
+  background: transparent;
+  float: right;
+  margin-right: 5%;
+  font-weight: bold;
+}
+

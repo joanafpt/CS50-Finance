@@ -1,0 +1,35 @@
+{% extends "layoutindex.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+{% block main %}
+
+<h2>History</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Date</th>
+    <th>Stock</th>
+    <th>Val. before transaction</th>
+    <th>Stock Value</th>
+    <th>Transacted quantity</th>
+    <th>Remaining cash</th>
+    <th>Type of Transaction</th>
+    <th>Qty owned</th>
+  </tr>
+   {% for stock in stock %}
+  <tr>
+    <td>{{stock.id}}</td>
+    <td>{{stock.date}}</td>
+    <td>{{stock.stock}}</td>
+    <td>{{stock.current_value}}</td>
+    <td>{{stock.stock_value}}</td>
+    <td>{{stock.qty_of_shares}}</td>
+    <td>{{stock.updated_ammount}}</td>
+    <td>{{stock.type_of_transaction}}</td>
+    <td>{{stock.qty_currently_owned}}</td>
+  </tr>
+ {% endfor %}
+</table>
+{% endblock %}
