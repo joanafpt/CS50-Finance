@@ -8,7 +8,7 @@ from tempfile import mkdtemp
 from werkzeug.exceptions import default_exceptions, HTTPException, InternalServerError
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from helpers import apology, login_required, lookup, usd, success, getValueNow, passwordValidator
+from helpers import apology, login_required, lookup, usd, getValueNow, passwordValidator
 
 # Configure application
 app = Flask(__name__)
