@@ -1,1 +1,1 @@
-finance-cs50ide
+Using Python, SQL, Flask, werkzeug
